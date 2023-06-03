@@ -72,6 +72,32 @@ Our application's JavaScript code uses jQuery to make a GET request to the Media
 
 Este ejemplo utiliza la función fetchArticle para hacer una solicitud GET a la API de Wikipedia. La función recibe como parámetro el código de idioma y procesa la respuesta para mostrar el artículo en la página.
 
+# Tech Stack
+Our "Wikipedia Featured Article" app uses a combination of technologies to deliver an engaging and efficient user experience.
+
+Here are the key technologies that make up our tech stack:
+
+#### HTML5: 
+The main markup language for the structure and content of our web page. We use HTML5 to create the basic structure of our app, including the containers for the article content, images, and buttons.
+
+#### CSS3: 
+The Cascading Style Sheet language that we use to style and format our web pages. We use CSS3 to add colors, fonts, margins, padding, and other styling to our web page, and to make sure it looks good on different screen sizes.
+
+#### JavaScript: 
+The programming language we use to add interactivity to our web page. With JavaScript, we can make requests to the Wikipedia API, process the responses, and dynamically update the content of our web page based on those responses.
+
+#### jQuery: 
+A popular JavaScript library that we use to simplify JavaScript programming, especially AJAX requests to the Wikipedia API.
+
+#### MediaWiki API: 
+The Wikipedia API we use to get featured articles. This API provides us with an easy way to make HTTP GET requests to get information about a random article, including its title, excerpt, image, and link to the full article.
+
+#### PHP: 
+The server-side programming language we use to make the Wikipedia API request. PHP allows us to pass the language parameter to the API and return the response to our web page.
+
+#### LocalStorage: 
+A feature of the Web Storage API that allows us to store data in the user's browser. We use LocalStorage to remember the language selected by the user, so that we can display articles in that language the next time the user visits our page.
+
 ## Authors
 
 - [@andricktakisawa](https://www.github.com/andricktakisawa)
