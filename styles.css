@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: #ececec;
+}
+
+#featured-article-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#article-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#article-title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+#article-content {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#article-image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text-container {
+    width: 100%;
+}
+
+#language-select {
+    padding: 10px;
+    margin: 40px auto 20px;
+    font-size: 1.2em;
+    color: #333;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    outline: none;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #692afc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #5326bc;
+}
+
+#article-link_btn.dontshowbtn {
+    display: none;
+}
+
+#recharge_btn.dontshowbtn {
+    display: none;
+}
+
+#article-image.dontshowimg {
+    display: none;
+}
+
+#recharge_btn {
+    margin: 20px auto 20px;
+    width: 70%;
+}
+
+/* Añade media queries para los tamaños de pantalla más grandes */
+@media (min-width: 768px) {
+    #article-content-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

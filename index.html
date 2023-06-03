@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artículo destacado de Wikipedia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+</head>
+
+<body>
+    <select id="language-select">
+        <option disabled selected>Select a language to start</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+    </select>
+
+    <div id="featured-article-container">
+        <h1 style="text-align: center; margin-bottom: 20px;" id="wiki-title_art">Select a language to start</h1>
+        <div id="article-content-wrapper">
+            <img id="article-image" class="dontshowimg" src="" alt="Imagen del artículo">
+            <div id="text-container">
+                <h2 id="article-title"></h2>
+                <p id="article-content"></p>
+                <a id="article-link" href="" target="_blank" style="text-decoration: none;">
+                    <button id="article-link_btn" class="dontshowbtn">Ver artículo completo</button>
+                </a>
+            </div>
+        </div>
+        <button onclick="document.location.reload()" id="recharge_btn" class="dontshowbtn">
+            Recargar
+        </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="fetch_wiki_article.js"></script>
+</body>
+
+</html>
